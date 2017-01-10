@@ -1,0 +1,293 @@
+# Kodi language file
+# Addon Name: Skin Helper Widgets
+# Addon id: script.skin.helper.widgets
+# Addon Provider: marcelveldt
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2014-10-26 17:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#32000"
+msgid "Favourites"
+msgstr "Избранное"
+
+msgctxt "#32001"
+msgid "Favourite Media"
+msgstr "Избранное медиа"
+
+msgctxt "#32002"
+msgid "Next Episodes"
+msgstr "Следующие эпизоды"
+
+msgctxt "#32003"
+msgid "Recommended Movies"
+msgstr "Рекомендованные фильмы"
+
+msgctxt "#32004"
+msgid "Recommended Media"
+msgstr "Рекомендованное медиа"
+
+msgctxt "#32005"
+msgid "Recent Media"
+msgstr "Последние медиа"
+
+msgctxt "#32006"
+msgid "Similar Movies"
+msgstr "Похожие фильмы"
+
+msgctxt "#32007"
+msgid "In progress and Recommended Media"
+msgstr "Просматриваемое и рекомендованное медиа"
+
+msgctxt "#32008"
+msgid "Random Episodes"
+msgstr "Случайные эпизоды"
+
+msgctxt "#32009"
+msgid "Recommended Episodes"
+msgstr "Рекомендуемые эпизоды"
+
+msgctxt "#32010"
+msgid "In progress and recommended Episodes"
+msgstr "Просматриваемые и рекомендованные эпизоды"
+
+msgctxt "#32011"
+msgid "In progress Media"
+msgstr "Просматриваемое медиа"
+
+msgctxt "#32012"
+msgid "Recently added songs"
+msgstr "Последние добавленные песни"
+
+msgctxt "#32013"
+msgid "Recently played songs"
+msgstr "Последние добавленные песни"
+
+msgctxt "#32014"
+msgid "Similar TV Shows"
+msgstr "Похожие сериалы"
+
+msgctxt "#32015"
+msgid "Recommended albums"
+msgstr "Рекомендуемые альбомы"
+
+msgctxt "#32016"
+msgid "Recommended songs"
+msgstr "Рекомендуемые песни"
+
+msgctxt "#32017"
+msgid "PVR Channel groups"
+msgstr "PVR группы канала"
+
+msgctxt "#32018"
+msgid "Recent recordings"
+msgstr "Последние записи"
+
+msgctxt "#32019"
+msgid "Next unwatched recordings"
+msgstr "Следующие непросмотренные записи"
+
+msgctxt "#32020"
+msgid "TV Channels"
+msgstr "ТВ каналы"
+
+msgctxt "#32021"
+msgid "Timers"
+msgstr "Таймеры"
+
+msgctxt "#32022"
+msgid "Similar Media"
+msgstr "Похожее медиа"
+
+msgctxt "#32023"
+msgid "Widgets"
+msgstr "Виджеты"
+
+msgctxt "#32024"
+msgid "Enable artwork lookups"
+msgstr "Разрешить просмотр иллюстраций"
+
+msgctxt "#32025"
+msgid "Show specials in episode widgets"
+msgstr "Показать предложения в виджете эпизодов"
+
+msgctxt "#32026"
+msgid "Browse albums instead of playing for album widgets"
+msgstr "Просмотр альбомов вместо того, чтобы играть виджет альбома"
+
+msgctxt "#32027"
+msgid "In-progress episodes"
+msgstr "Просматриваемые эпизоды"
+
+msgctxt "#32028"
+msgid "In-progress movies"
+msgstr "Просматриваемые фильмы"
+
+msgctxt "#32029"
+msgid "In-progress and recommended movies"
+msgstr "Просматриваемые и рекомендуемые фильмы"
+
+msgctxt "#32030"
+msgid "TV Channels (with artwork)"
+msgstr "ТВ каналы (с иллюстрациями)"
+
+msgctxt "#32031"
+msgid "Next unwatched recordings (reversed)"
+msgstr "След. непросмотреные записи (в обр. порядке)"
+
+msgctxt "#32032"
+msgid "In-progress and random movies"
+msgstr "Просматриваемые и случайные фильмы"
+
+msgctxt "#32033"
+msgid "Random albums"
+msgstr "Случайные альбомы"
+
+msgctxt "#32034"
+msgid "Random songs"
+msgstr "Случайные песни"
+
+msgctxt "#32035"
+msgid "Hide watched items in video widgets"
+msgstr "Скрыть просмотренные элементы в виджетах видео"
+
+msgctxt "#32036"
+msgid "Only use in-progress shows in next episodes widget"
+msgstr "Использовать только просм. сериалы в виджете след. эпизод"
+
+msgctxt "#32037"
+msgid "Recommended Tv Shows"
+msgstr "Рекомендуемые сериалы"
+
+msgctxt "#32038"
+msgid "Recently added movies"
+msgstr "Последние добавленные фильмы"
+
+msgctxt "#32039"
+msgid "Recently added episodes"
+msgstr "Последние добавленные эпизоды"
+
+msgctxt "#32040"
+msgid "Recently added musicvideos"
+msgstr "Последние добавленные муз. видео"
+
+msgctxt "#32041"
+msgid "Random Tv Shows"
+msgstr "Случайные сериалы"
+
+msgctxt "#32042"
+msgid "Unaired episodes"
+msgstr "Эпизоды не в эфире"
+
+msgctxt "#32043"
+msgid "Next airing episodes"
+msgstr "След. эпизоды в эфире"
+
+msgctxt "#32044"
+msgid "In progress TV shows"
+msgstr "Просматриваемые сериалы"
+
+msgctxt "#32045"
+msgid "Recently added TV shows"
+msgstr "Последние добавленные сериалы"
+
+msgctxt "#32046"
+msgid "IMDB Top 250 movies in library"
+msgstr "IMDB Топ 250 фильмов в библиотеке"
+
+msgctxt "#32047"
+msgid "IMDB Top 250 Tv shows in library"
+msgstr "IMDB Топ 250 сериалов в библиотеке"
+
+msgctxt "#32048"
+msgid "Random movies"
+msgstr "Случайные фильмы"
+
+msgctxt "#32049"
+msgid "In progress and random Episodes"
+msgstr "Просматриваемые и случайные эпизоды"
+
+msgctxt "#32050"
+msgid "Group items in recent episodes widget"
+msgstr "Группировка элементов в виджете последних эпизодов"
+
+msgctxt "#32051"
+msgid "Browse TV Show"
+msgstr "Обзор сериалов"
+
+msgctxt "#32052"
+msgid "Browse Season"
+msgstr "Обзор сезонов"
+
+msgctxt "#32053"
+msgid "Default number of items to show in widget"
+msgstr "По умолчанию количество элементов для отображения в виджете"
+
+msgctxt "#32054"
+msgid "PVR"
+msgstr "PVR"
+
+msgctxt "#32055"
+msgid "Similar songs"
+msgstr "Похожие песни"
+
+msgctxt "#32056"
+msgid "Similar albums"
+msgstr "Похожие альбомы"
+
+msgctxt "#32057"
+msgid "Mixed Media"
+msgstr "Смешанное медиа"
+
+msgctxt "#32058"
+msgid "Movies and Tvshows in IMDB Top250"
+msgstr "Фильмы и Сериалы в IMDB Топ 250"
+
+msgctxt "#32059"
+msgid "Random media"
+msgstr "Случайное медиа"
+
+msgctxt "#32060"
+msgid "In progress and Random media"
+msgstr "Просматриваемое и случайное медиа"
+
+msgctxt "#32061"
+msgid "In progress music videos"
+msgstr "Просматриваемое муз. видео"
+
+msgctxt "#32062"
+msgid "Random music videos"
+msgstr "Случайное муз. видео"
+
+msgctxt "#32063"
+msgid "Recently added artists"
+msgstr "Последние добавленные артисты"
+
+msgctxt "#32064"
+msgid "Random artists"
+msgstr "Случайные артисты"
+
+msgctxt "#32065"
+msgid "Recommended artists"
+msgstr "Рекомендуемые артисты"
+
+msgctxt "#32066"
+msgid "Unwatched movies"
+msgstr "Непросмотренные фильмы"
+
+msgctxt "#32067"
+msgid "Hide watched items in recent items listings"
+msgstr "Скрывать просмотренные элементы в списках последних элементов"
+
+msgctxt "#32068"
+msgid "Episodes airing today"
+msgstr "Эпизоды сегодня в эфире"
