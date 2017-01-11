@@ -7,7 +7,7 @@
         <setting id="default_limit" type="number" label="32053" default="25"/>
     </category>
     <!-- episodes -->
-    <category label="$LOCALIZE[20360]">
+    <category label="32069">
         <setting id="episodes_enable_specials" type="bool" label="32025" default="false"/>
         <setting id="nextup_inprogressonly" type="bool" label="32036" default="true"/>
         <setting id="episodes_grouping" type="bool" label="32050" default="false"/>
