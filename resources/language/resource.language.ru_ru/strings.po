@@ -293,5 +293,9 @@ msgid "Episodes airing today"
 msgstr "Эпизоды сегодня в эфире"
 
 msgctxt "#32069"
+msgid "Recently played TV channels"
+msgstr "Последние проигранные ТВ каналы"
+
+msgctxt "#32070"
 msgid "Episodes"
 msgstr "Эпизоды"
