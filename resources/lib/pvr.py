@@ -7,7 +7,7 @@
     all PVR widgets provided by the script
 '''
 
-from utils import create_main_entry
+from utils import create_main_entry, log_msg
 from operator import itemgetter
 from metadatautils import extend_dict, process_method_on_list, get_clean_image
 import xbmc
@@ -88,7 +88,6 @@ class Pvr(object):
         if xbmc.getCondVisibility("Pvr.HasTVChannels"):
             # Get a list of all the unwatched tv recordings
             recordings = self.metadatautils.kodidb.recordings()
-            recordings = sorted(recordings, key=itemgetter('endtime'))[:self.options["limit"]]
             pvr_backend = xbmc.getInfoLabel("Pvr.BackendName").decode("utf-8")
             for item in recordings:
                 # exclude live tv items from recordings list (mythtv workaround)
@@ -108,6 +107,7 @@ class Pvr(object):
                 all_items = sorted(all_items, key=itemgetter('endtime'), reverse=False)
             else:
                 all_items = sorted(all_items, key=itemgetter('endtime'), reverse=True)
+            
             # return result including artwork...
             return process_method_on_list(self.process_recording, all_items)
         return all_items
@@ -120,7 +120,11 @@ class Pvr(object):
         '''get pvr timers'''
         all_items = []
         if xbmc.getCondVisibility("Pvr.HasTVChannels"):
-            all_items = sorted(self.metadatautils.kodidb.timers(), key=itemgetter('starttime'))
+            # only add timers which have a broadcast date
+            for timer in self.metadatautils.kodidb.timers():
+                if not timer["starttime"].startswith("1970"):
+                    all_items.append(timer)
+            all_items = sorted(all_items, key=itemgetter('starttime'), reverse=True)[:self.options["limit"]]
             all_items = process_method_on_list(self.process_timer, all_items)
         return all_items
 
@@ -150,7 +154,7 @@ class Pvr(object):
         item["label"] = channelname
         item["channelid"] = channeldata["channelid"]
         if not channellogo:
-            channellogo = self.metadatautils.get_channellogo(channelname).get("ChannelLogo", "")
+            channellogo = self.metadatautils.get_channellogo(channelname)
         if channellogo:
             item["art"] = {"thumb": channellogo}
         item["channellogo"] = channellogo
@@ -178,8 +182,11 @@ class Pvr(object):
         '''transform the json received from kodi into something we can use'''
         item["file"] = "plugin://script.skin.helper.service/?action=launch&path=" + \
             quote_plus("ReplaceWindow(tvtimers),return")
-        channel_details = self.metadatautils.kodidb.channel(item["channelid"])
-        channelname = channel_details["label"]
+        if not item["channelid"] == -1:
+            channel_details = self.metadatautils.kodidb.channel(item["channelid"])
+            channelname = channel_details["label"]
+        else:
+            channelname = ""
         item["channel"] = channelname
         item["plot"] = item.get("summary", "")
         item["type"] = "recording"

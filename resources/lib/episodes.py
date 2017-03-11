@@ -70,6 +70,8 @@ class Episodes(object):
             filters.append(kodi_constants.FILTER_UNWATCHED)
         if self.options.get("tag"):
             filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
+        if self.options.get("path"):
+            filters.append({"operator": "startswith", "field": "path", "value": self.options["path"]})
         while unique_count < self.options["limit"]:
             recent_episodes = self.metadatautils.kodidb.episodes(
                 sort=kodi_constants.SORT_DATEADDED, filters=filters, limits=(
@@ -103,6 +105,8 @@ class Episodes(object):
             filters.append(kodi_constants.FILTER_UNWATCHED)
         if self.options.get("tag"):
             filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
+        if self.options.get("path"):
+            filters.append({"operator": "startswith", "field": "path", "value": self.options["path"]})
         return self.metadatautils.kodidb.episodes(sort=kodi_constants.SORT_RANDOM, filters=filters,
                                              limits=(0, self.options["limit"]))
 
@@ -111,6 +115,8 @@ class Episodes(object):
         filters = [kodi_constants.FILTER_INPROGRESS]
         if self.options.get("tag"):
             filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
+        if self.options.get("path"):
+            filters.append({"operator": "startswith", "field": "path", "value": self.options["path"]})
         return self.metadatautils.kodidb.episodes(sort=kodi_constants.SORT_LASTPLAYED, filters=filters,
                                              limits=(0, self.options["limit"]))
 
@@ -139,6 +145,8 @@ class Episodes(object):
             filters = [kodi_constants.FILTER_INPROGRESS]
         if self.options.get("tag"):
             filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
+        if self.options.get("path"):
+            filters.append({"operator": "startswith", "field": "path", "value": self.options.get("path")})
         # First we get a list of all the inprogress/unwatched TV shows ordered by lastplayed
         all_shows = self.metadatautils.kodidb.tvshows(sort=kodi_constants.SORT_LASTPLAYED, filters=filters,
                                                  limits=(0, self.options["limit"]))

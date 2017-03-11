@@ -7,7 +7,7 @@
     all tvshows widgets provided by the script
 '''
 
-from utils import create_main_entry
+from utils import create_main_entry, KODI_VERSION
 from operator import itemgetter
 from metadatautils import kodi_constants, process_method_on_list, TheTvDb
 import xbmc
@@ -43,7 +43,7 @@ class Tvshows(object):
             all_items += [
                 (self.addon.getLocalizedString(32014), "similar&mediatype=tvshows", icon),
                 (xbmc.getLocalizedString(10134), "favourites&mediatype=tvshows", icon),
-                (xbmc.getLocalizedString(20459), "tags&mediatype=tvshows", icon)
+                (xbmc.getLocalizedString(20459), "tagslisting&mediatype=tvshows", icon)
             ]
         if tag:
             # add episode nodes with tag filter
@@ -58,7 +58,7 @@ class Tvshows(object):
                     tag, icon)]
         return process_method_on_list(create_main_entry, all_items)
 
-    def tags(self):
+    def tagslisting(self):
         '''get tags listing'''
         all_items = []
         for item in self.metadatautils.kodidb.files("videodb://tvshows/tags"):
