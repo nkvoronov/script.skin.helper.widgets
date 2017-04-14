@@ -14,9 +14,9 @@
 
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Ready to use widgets for all kind of media types</summary>
-        <summary lang="ru_RU">Сервис помощник для KODI обложек (Виджеты)</summary>
+        <summary lang="ru_RU">Готовые к использованию виджеты для всех типов медиа-типов</summary>
         <description lang="en_GB">Ready to use widgets for all kind of media types</description>
-        <description lang="ru_RU">Сервис помощник для KODI обложек (Виджеты)</description>
+        <description lang="ru_RU">Готовые к использованию виджеты для всех типов медиа-типов</description>
         <description></description>
 		<language></language>
 		<platform>all</platform>
