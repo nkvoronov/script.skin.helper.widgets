@@ -121,8 +121,8 @@ class Main(object):
             cache_checksum = None
         else:
             cache_checksum = ""
-            for key in sorted(self.options):
-                cache_checksum += "%s.%s" % (key, self.options[key])
+            for key, value in self.options.items():
+                cache_checksum += "%s.%s" % (key, value)
         cache = self.cache.get(cache_str, checksum=cache_checksum)
         if cache and not self.options.get("skipcache") == "true":
             log_msg("MEDIATYPE: %s - ACTION: %s -- got items from cache - CHECKSUM: %s"
@@ -174,7 +174,7 @@ class Main(object):
         # tvshows and episodes nodes
         if xbmc.getCondVisibility("Library.HasContent(tvshows)"):
             all_items.append((xbmc.getLocalizedString(20343), "tvshowslisting", "DefaultTvShows.png"))
-            all_items.append((self.addon.getLocalizedString(32070), "episodeslisting", "DefaultTvShows.png"))
+            all_items.append((xbmc.getLocalizedString(20360), "episodeslisting", "DefaultTvShows.png"))
 
         # pvr node
         if xbmc.getCondVisibility("Pvr.HasTVChannels"):
