@@ -15,6 +15,7 @@ import urllib
 ADDON_ID = "script.skin.helper.widgets"
 KODI_VERSION = int(xbmc.getInfoLabel("System.BuildVersion").split(".")[0])
 
+
 def log_msg(msg, loglevel=xbmc.LOGDEBUG):
     '''log message to kodi log'''
     if isinstance(msg, unicode):

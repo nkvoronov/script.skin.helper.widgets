@@ -297,5 +297,9 @@ msgid "Recently played TV channels"
 msgstr "Последние проигранные ТВ каналы"
 
 msgctxt "#32070"
+msgid "Enable aggresive refresh of widgets"
+msgstr "Включить принудительное обновление виджетов"
+
+msgctxt "#32071"
 msgid "Episodes"
 msgstr "Эпизоды"
