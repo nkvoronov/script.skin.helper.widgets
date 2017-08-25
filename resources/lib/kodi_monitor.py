@@ -55,7 +55,7 @@ class KodiMonitor(xbmc.Monitor):
                 self.last_mediatype = mediatype
                 if mediatype in ["movie", "episode", "musicvideo"]:
                     if self.addon.getSetting("aggresive_refresh") == "true":
-                    self.refresh_video_widgets(mediatype)
+                        self.refresh_video_widgets(mediatype)
 
         except Exception as exc:
             log_msg("Exception in KodiMonitor: %s" % exc, xbmc.LOGERROR)
