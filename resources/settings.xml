@@ -5,10 +5,10 @@
         <setting id="hide_watched" type="bool" label="32035" default="false"/>
         <setting id="hide_watched_recent" type="bool" label="32067" default="true"/>
         <setting id="default_limit" type="number" label="32053" default="25"/>
-        <setting id="aggresive_refresh" type="bool" label="32070" default="false"/>
+        <setting id="aggresive_refresh" type="bool" label="32071" default="false"/>
     </category>
     <!-- episodes -->
-    <category label="32071">
+    <category label="32072">
         <setting id="episodes_enable_specials" type="bool" label="32025" default="false"/>
         <setting id="nextup_inprogressonly" type="bool" label="32036" default="true"/>
         <setting id="episodes_grouping" type="bool" label="32050" default="false"/>
