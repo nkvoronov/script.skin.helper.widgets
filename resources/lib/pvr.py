@@ -106,7 +106,7 @@ class Pvr(object):
                 all_items = sorted(all_items, key=itemgetter('endtime'), reverse=False)
             else:
                 all_items = sorted(all_items, key=itemgetter('endtime'), reverse=True)
-            
+
             # return result including artwork...
             return self.metadatautils.process_method_on_list(self.process_recording, all_items)
         return all_items
