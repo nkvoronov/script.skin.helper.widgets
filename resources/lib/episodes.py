@@ -12,7 +12,6 @@ from operator import itemgetter
 from metadatautils import kodi_constants
 import xbmc
 
-
 class Episodes(object):
     '''all episode widgets provided by the script'''
     options = {}
