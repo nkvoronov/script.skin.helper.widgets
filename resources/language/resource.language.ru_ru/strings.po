@@ -305,5 +305,21 @@ msgid "Enable aggresive refresh of widgets"
 msgstr "Включить принудительное обновление виджетов"
 
 msgctxt "#32072"
+msgid "Number of recently watched items for similar widgets"
+msgstr "Количество недавно просмотренных элементов для похожих виджетов"
+
+msgctxt "#32073"
+msgid "Hide watched items in similar widgets"
+msgstr "Скрыть просмотренные элементы в похожих виджетах"
+
+msgctxt "#32074"
+msgid "Enable experimental recommended widgets"
+msgstr "Включить экспериментальные рекомендуемые виджеты"
+
+msgctxt "#32075"
+msgid "Playlists (Choose playlist for Movies then TV Shows)"
+msgstr "Плейлисты (выберите плейлист для фильмов и сериалов)"
+
+msgctxt "#32076"
 msgid "Episodes"
 msgstr "Эпизоды"
