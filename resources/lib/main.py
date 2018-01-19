@@ -147,9 +147,9 @@ class Main(object):
             cache_checksum = self.options.get("reload","")
         # only check cache if not "skipcache"
         if not self.options.get("skipcache") == "true":
-        cache = self.metadatautils.cache.get(cache_str, checksum=cache_checksum)
+            cache = self.metadatautils.cache.get(cache_str, checksum=cache_checksum)
             if cache:
-            log_msg("MEDIATYPE: %s - ACTION: %s - PATH: %s - TAG: %s -- got items from cache - CHECKSUM: %s"
+                log_msg("MEDIATYPE: %s - ACTION: %s - PATH: %s - TAG: %s -- got items from cache - CHECKSUM: %s"
                     % (media_type, action, self.options.get("path"), self.options.get("tag"), cache_checksum))
             all_items = cache
 
