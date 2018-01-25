@@ -102,15 +102,15 @@ class Tvshows(object):
             # return processed show
             return self.metadatautils.process_method_on_list(self.process_tvshow, all_items)
         else:
-        filters = [kodi_constants.FILTER_RATING]
-        if self.options["hide_watched"]:
-            filters.append(kodi_constants.FILTER_UNWATCHED)
-        if self.options.get("tag"):
-            filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
-        tvshows = self.metadatautils.kodidb.tvshows(
-            sort=kodi_constants.SORT_RATING, filters=filters, limits=(
-                0, self.options["limit"]))
-        return self.metadatautils.process_method_on_list(self.process_tvshow, tvshows)
+            filters = [kodi_constants.FILTER_RATING]
+            if self.options["hide_watched"]:
+                filters.append(kodi_constants.FILTER_UNWATCHED)
+            if self.options.get("tag"):
+                filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
+            tvshows = self.metadatautils.kodidb.tvshows(
+                sort=kodi_constants.SORT_RATING, filters=filters, limits=(
+                    0, self.options["limit"]))
+            return self.metadatautils.process_method_on_list(self.process_tvshow, tvshows)
 
     def recent(self):
         ''' get recently added tvshows '''
@@ -183,7 +183,7 @@ class Tvshows(object):
             # sort list by score and cap by limit
             tvshows = sorted(all_items, key=itemgetter("similarscore"), reverse=True)[:self.options["limit"]]
             # return processed show
-        return self.metadatautils.process_method_on_list(self.process_tvshow, tvshows)
+            return self.metadatautils.process_method_on_list(self.process_tvshow, tvshows)
 
     def forgenre(self):
         ''' get top rated tvshows for given genre'''

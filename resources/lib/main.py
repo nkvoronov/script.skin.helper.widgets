@@ -83,7 +83,7 @@ class Main(object):
                 ("songs", "songs"),
                 ("artists", "artists"),
                 ("media", "media"),
-                ("favourites", "favourites"), 
+                ("favourites", "favourites"),
                     ("favorites", "favourites")]:
                 if item[0] in options["action"]:
                     options["mediatype"] = item[1]
@@ -137,7 +137,7 @@ class Main(object):
         else:
             # use tag otherwise
             cache_id = self.options.get("tag")
-        cache_str = "SkinHelper.Widgets.%s.%s.%s.%s.%s" % (media_type, 
+        cache_str = "SkinHelper.Widgets.%s.%s.%s.%s.%s" % (media_type,
                     action, self.options["limit"], self.options.get("path"), cache_id)
         if not self.win.getProperty("widgetreload2"):
             # at startup we simply accept whatever is in the cache
@@ -150,8 +150,8 @@ class Main(object):
             cache = self.metadatautils.cache.get(cache_str, checksum=cache_checksum)
             if cache:
                 log_msg("MEDIATYPE: %s - ACTION: %s - PATH: %s - TAG: %s -- got items from cache - CHECKSUM: %s"
-                    % (media_type, action, self.options.get("path"), self.options.get("tag"), cache_checksum))
-            all_items = cache
+                        % (media_type, action, self.options.get("path"), self.options.get("tag"), cache_checksum))
+                all_items = cache
 
         # Call the correct method to get the content from json when no cache
         if not all_items:

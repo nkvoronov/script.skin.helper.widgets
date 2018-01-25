@@ -92,13 +92,13 @@ class Movies(object):
             # return list sorted by recommended score
             return self.sort_by_recommended(all_items)
         else:
-        filters = [kodi_constants.FILTER_RATING]
-        if self.options["hide_watched"]:
-            filters.append(kodi_constants.FILTER_UNWATCHED)
-        if self.options.get("tag"):
-            filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
-        return self.metadatautils.kodidb.movies(sort=kodi_constants.SORT_RATING, filters=filters,
-                                           limits=(0, self.options["limit"]))
+            filters = [kodi_constants.FILTER_RATING]
+            if self.options["hide_watched"]:
+                filters.append(kodi_constants.FILTER_UNWATCHED)
+            if self.options.get("tag"):
+                filters.append({"operator": "contains", "field": "tag", "value": self.options["tag"]})
+            return self.metadatautils.kodidb.movies(sort=kodi_constants.SORT_RATING, filters=filters,
+                                                    limits=(0, self.options["limit"]))
 
     def recent(self):
         ''' get recently added movies '''

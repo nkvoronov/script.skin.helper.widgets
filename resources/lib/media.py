@@ -91,12 +91,12 @@ class Media(object):
             # return list sorted by recommended score, and capped by limit
             return self.sort_by_recommended(movies+tvshows)
         else:
-        all_items = self.movies.recommended()
-        all_items += self.tvshows.recommended()
-        all_items += self.albums.recommended()
-        all_items += self.songs.recommended()
-        all_items += self.episodes.recommended()
-        return sorted(all_items, key=lambda k: random.random())[:self.options["limit"]]
+            all_items = self.movies.recommended()
+            all_items += self.tvshows.recommended()
+            all_items += self.albums.recommended()
+            all_items += self.songs.recommended()
+            all_items += self.episodes.recommended()
+            return sorted(all_items, key=lambda k: random.random())[:self.options["limit"]]
 
     def recent(self):
         ''' get recently added media '''
@@ -196,11 +196,11 @@ class Media(object):
                 # return list sorted by score and capped by limit
                 return sorted(all_items, key=itemgetter("similarscore"), reverse=True)[:self.options["limit"]]
         else:
-        all_items = self.movies.similar()
-        all_items += self.tvshows.similar()
-        all_items += self.albums.similar()
-        all_items += self.songs.similar()
-        return sorted(all_items, key=lambda k: random.random())[:self.options["limit"]]
+            all_items = self.movies.similar()
+            all_items += self.tvshows.similar()
+            all_items += self.albums.similar()
+            all_items += self.songs.similar()
+            return sorted(all_items, key=lambda k: random.random())[:self.options["limit"]]
 
     def inprogressandrecommended(self):
         ''' get recommended AND in progress media '''
