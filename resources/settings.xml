@@ -11,7 +11,7 @@
 		<setting id="exp_recommended" type="bool" label="32074" default="false"/>
 	</category>
 	<!-- episodes -->
-	<category label="32076">
+	<category label="32100">
 		<setting id="episodes_enable_specials" type="bool" label="32025" default="false"/>
 		<setting id="nextup_inprogressonly" type="bool" label="32036" default="true"/>
 		<setting id="episodes_grouping" type="bool" label="32050" default="false"/>

@@ -129,7 +129,7 @@ class Main(object):
             # if action is similar, use imdbid
             cache_id = self.options.get("imdbid", "")
             # if similar was called without imdbid, skip cache
-            if not self.options.get("imdbid", ""):
+            if not cache_id:
                 self.options["skipcache"] = "true"
         elif self.options["action"] == "playlist" and self.options["mediatype"]=="media":
             # if action is mixed playlist, use playlist labels
@@ -137,6 +137,7 @@ class Main(object):
         else:
             # use tag otherwise
             cache_id = self.options.get("tag")
+        # set cache_str
         cache_str = "SkinHelper.Widgets.%s.%s.%s.%s.%s" % (media_type,
                     action, self.options["limit"], self.options.get("path"), cache_id)
         if not self.win.getProperty("widgetreload2"):
@@ -199,7 +200,7 @@ class Main(object):
         # tvshows and episodes nodes
         if xbmc.getCondVisibility("Library.HasContent(tvshows)"):
             all_items.append((xbmc.getLocalizedString(20343), "tvshowslisting", "DefaultTvShows.png"))
-            all_items.append((xbmc.getLocalizedString(32076), "episodeslisting", "DefaultTvShows.png"))
+            all_items.append((xbmc.getLocalizedString(32100), "episodeslisting", "DefaultTvShows.png"))
 
         # pvr node
         if xbmc.getCondVisibility("Pvr.HasTVChannels"):
