@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<!-- common-->
-	<category label="32163">
+	<category label="32101">
 		<setting id="hide_watched" type="bool" label="32035" default="false"/>
 		<setting id="hide_watched_recent" type="bool" label="32067" default="true"/>
 		<setting id="hide_watched_similar" type="bool" label="32073" default="true"/>
