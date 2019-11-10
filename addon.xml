@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.38.024" provider-name="marcelveldt, YLLOW_DRAGON">
+	<addon id="script.skin.helper.widgets" name="Skin Helper Service Widgets" version="1.0.38.025" provider-name="marcelveldt, YLLOW_DRAGON">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 		<import addon="xbmc.addon" version="12.0.0"/>
@@ -13,8 +13,10 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Ready to use widgets for all kind of media types</summary>
 		<summary lang="ru_RU">Готовые к использованию виджеты для всех типов медиа-типов</summary>
+		<summary lang="uk_UA">Готові до використання віджети для всіх типів медіа-типів</summary>
 		<description lang="en_GB">Ready to use widgets for all kind of media types</description>
 		<description lang="ru_RU">Готовые к использованию виджеты для всех типов медиа-типов</description>
+		<description lang="uk_UA">Готові до використання віджети для всіх типів медіа-типів</description>
 		<description></description>
 		<language></language>
 		<platform>all</platform>
