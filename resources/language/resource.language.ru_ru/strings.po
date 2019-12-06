@@ -332,10 +332,10 @@ msgctxt "#32078"
 msgid "Recommended in Playlist"
 msgstr "Рекомендуемые плейлисты"
 
-msgctxt "#32100"
+msgctxt "#32079"
 msgid "Episodes"
 msgstr "Эпизоды"
 
-msgctxt "#32101"
+msgctxt "#32080"
 msgid "General"
 msgstr "Общие"
