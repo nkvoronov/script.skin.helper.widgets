@@ -203,7 +203,7 @@ class Main(object):
         # tvshows and episodes nodes
         if xbmc.getCondVisibility("Library.HasContent(tvshows)"):
             all_items.append((xbmc.getLocalizedString(20343), "tvshowslisting", "DefaultTvShows.png"))
-            all_items.append((xbmc.getLocalizedString(20360), "episodeslisting", "DefaultTvShows.png"))
+            all_items.append((self.addon.getLocalizedString(32079), "episodeslisting", "DefaultTvShows.png"))
 
         # pvr node
         if xbmc.getCondVisibility("Pvr.HasTVChannels"):
