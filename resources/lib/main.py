@@ -7,15 +7,15 @@
     main plugin listing and entry point
 '''
 
-import sys
+import os, sys
+import urllib.parse as urlparse
 import random
-import urlparse
 import xbmcplugin
 import xbmc
 import xbmcaddon
 import xbmcgui
 from metadatautils import MetadataUtils
-from utils import log_msg, log_exception, ADDON_ID, create_main_entry
+from resources.lib.utils import log_msg, log_exception, ADDON_ID, create_main_entry
 
 ADDON_HANDLE = int(sys.argv[1])
 
@@ -55,7 +55,7 @@ class Main(object):
     def get_options(self):
         '''get the options provided to the plugin path'''
 
-        options = dict(urlparse.parse_qsl(sys.argv[2].replace('?', '').lower().decode("utf-8")))
+        options = dict(urlparse.parse_qsl(sys.argv[2].replace('?', '').lower()))
 
         # set the widget settings as options
         options["hide_watched"] = self.addon.getSetting("hide_watched") == "true"

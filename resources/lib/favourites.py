@@ -7,10 +7,11 @@
     all favourites widgets provided by the script
 '''
 
-from utils import create_main_entry
+import os, sys
+from resources.lib.utils import create_main_entry
 import xbmc
 import xbmcvfs
-from urllib import quote_plus
+from urllib.parse import quote_plus
 
 
 class Favourites(object):

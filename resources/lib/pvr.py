@@ -7,10 +7,11 @@
     all PVR widgets provided by the script
 '''
 
-from utils import create_main_entry
+import os, sys
+from resources.lib.utils import create_main_entry
 from operator import itemgetter
 import xbmc
-from urllib import quote_plus
+from urllib.parse import quote_plus
 
 
 class Pvr(object):
@@ -87,7 +88,7 @@ class Pvr(object):
         if xbmc.getCondVisibility("Pvr.HasTVChannels"):
             # Get a list of all the unwatched tv recordings
             recordings = self.metadatautils.kodidb.recordings()
-            pvr_backend = xbmc.getInfoLabel("Pvr.BackendName").decode("utf-8")
+            pvr_backend = xbmc.getInfoLabel("Pvr.BackendName")
             for item in recordings:
                 # exclude live tv items from recordings list (mythtv workaround)
                 if not ("mythtv" in pvr_backend.lower() and "/livetv/" in item.get("file", "").lower()):
