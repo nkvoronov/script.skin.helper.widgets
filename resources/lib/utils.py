@@ -8,7 +8,7 @@
 '''
 
 import os, sys
-import urllib.parse as urlparse
+import urllib.parse as urllib
 from traceback import format_exc
 import xbmc
 import xbmcaddon
@@ -42,7 +42,7 @@ def create_main_entry(item):
         "label": item[0],
         "file": filepath,
         "icon": item[2],
-        "art": {"fanart": "special://home/addons/script.skin.helper.widgets/fanart.jpg"},
+        "art": {"fanart": "special://home/addons/script.skin.helper.widgets/resources/fanart.jpg"},
         "isFolder": True,
         "type": "file",
         "IsPlayable": "false"
