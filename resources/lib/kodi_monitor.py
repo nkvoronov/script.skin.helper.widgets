@@ -36,7 +36,10 @@ class KodiMonitor(xbmc.Monitor):
         '''builtin function for the xbmc.Monitor class'''
         try:
             log_msg("Kodi_Monitor: sender %s - method: %s  - data: %s" % (sender, method, data))
-            data = json.loads(data)
+            if sys.version_info.major == 3:
+                data = json.loads(data)
+            else:
+                data = json.loads(data.decode('utf-8'))
             mediatype = ""
             if data and isinstance(data, dict):
                 if data.get("item"):
